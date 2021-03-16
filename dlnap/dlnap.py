@@ -807,7 +807,7 @@ if __name__ == '__main__':
    if action in ('', 'list'):
       print('Discovered devices:')
       for d in allDevices:
-         print(' {} {}'.format('[a]' if d.has_av_transport else '[x]', d))
+         print(' {} {} {}'.format('[a]' if d.has_av_transport else '[x]', d,d.port))
       sys.exit(0)
 
    d = allDevices[0]
